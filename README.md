@@ -15,3 +15,4 @@
 
 
 ## 機體構造 
+![image](https://github.com/Samuelchi861008/RaspberryPi_CheatSheet/blob/master/Model%20Overview.png)
