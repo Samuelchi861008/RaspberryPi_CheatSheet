@@ -1,8 +1,10 @@
 # Raspberry Pi CheatSheet
 
+
 ## 機體資訊
   * 型號 : Raspberry Pi 4B
   * Ram : 4G
+
 
 ## 必備項目
   * 主機體
@@ -16,3 +18,7 @@
 
 ## 機體構造 
 ![image](https://github.com/Samuelchi861008/RaspberryPi_CheatSheet/blob/master/Model%20Overview.png)
+
+
+## GPIO 腳位圖
+![image](https://github.com/Samuelchi861008/RaspberryPi_CheatSheet/blob/master/%E8%85%B3%E4%BD%8D%E5%9C%96.png)
