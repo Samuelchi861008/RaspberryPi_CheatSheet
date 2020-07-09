@@ -11,7 +11,8 @@
   * 64G SD記憶卡 
   * Type-C 變壓器
   * 保護機體外殼 (含風扇和散熱片)
-  * HDMI(母) 轉 Micro HDMI(公) 轉接頭  
+  * HDMI(母) 轉 Micro HDMI(公) 轉接頭
+  * 其他依據自己需求採購感應器與線材
   
   購買參考網頁：https://www.eclife.com.tw/led/0703300039/1401100001/160309001
 
