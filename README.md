@@ -7,7 +7,9 @@
 
 [機體構造](#機體構造) 
 
-[腳位圖](#腳位圖)
+[腳位圖](#腳位圖)  
+
+[將作業系統載入記憶卡](#將作業系統載入記憶卡)
 
 
 ## 機體資訊
@@ -35,7 +37,7 @@
 
 
 ## 將作業系統載入記憶卡 
-以 MacOS 作為範例
+以 MacOS 作為示範
   * 下載官方作業系統檔案
     * 分為三種版本(附帶圖形化介面和建議軟體、單純圖形化介面、單純指令介面)，擇一下載 zip
     * https://www.raspberrypi.org/downloads/raspbian/
@@ -55,3 +57,5 @@
     * 範例：```$ diskutil unmountDisk /dev/disk2```
   * 將作業系統寫入 Micro SD 記憶卡
     * ```$ sudo dd bs=1m if=[img 檔案路徑] of=[Micro SD 的硬碟代號]```
+    * 範例：```$ sudo dd bs=1m if=xxxx.img of=/dev/disk2```
+    * 下指令以後可能會需要等5~10分鐘，等待出現文字訊息則為載入完畢，並非當機
