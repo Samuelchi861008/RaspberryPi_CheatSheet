@@ -9,7 +9,11 @@
 
 [腳位圖](#腳位圖)  
 
-[將作業系統載入記憶卡](#將作業系統載入記憶卡)
+[將作業系統載入記憶卡](#將作業系統載入記憶卡)  
+
+[安裝](#安裝)
+
+[首次設定](#首次設定)
 
 
 ## 機體資訊
@@ -59,3 +63,32 @@
     * ```$ sudo dd bs=1m if=[img 檔案路徑] of=[Micro SD 的硬碟代號]```
     * 範例：```$ sudo dd bs=1m if=xxxx.img of=/dev/disk2```
     * 下指令以後可能會需要等5~10分鐘，等待出現文字訊息則為載入完畢，並非當機
+  * 再次卸載
+    * ```$ diskutil unmountDisk [Micro SD 的硬碟代號]```
+    * 範例：```$ diskutil unmountDisk /dev/disk2```
+  * 拔出讀卡機，取出 Micro SD 記憶卡
+
+
+## 安裝
+  * 將散熱片確實貼上 Raspberry Pi
+  * 將盒子與風扇組裝完成，並將 Raspberry Pi 放至盒子中
+  * 將鍵盤滑鼠接上 USB 連接阜
+  * 將 HDMI 接上轉接頭後插入 Micro HDMI 連接阜，HDMI 需接上一個外接螢幕
+  * 若要使用網路線也可插入網路線 (內建有 Wi-Fi，故請自行選擇)
+  * 最後再將電源接上，則會自動開機
+
+## 首次設定
+  * 首先，會看到歡迎頁面，點擊『Next』即可
+  * 『Set Country』頁面
+    * Country : Taiwan
+    * Language : Chinese
+    * Timezone : Taipei
+    * 勾選『Use US Keyboard』
+  * 『Change Password』修改預設密碼頁面
+    * 輸入新密碼，並再次輸入一次進行驗證
+    * 假設不想設定可直接按『Next』跳過，而預設帳號為『pi』、預設密碼為『raspberry』
+  * 『Set Up Screen』頁面
+    * 假設螢幕過大，則畫面將不會填滿整個螢幕，想要填滿則勾選下方選項即可
+  * 『Select Wireless Network』頁面
+    * 選擇一個可用 Wi-Fi 並輸入密碼連線即可
+  * 『Update Software』頁面，直接點擊『Next』將軟體更新至最新
