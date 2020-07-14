@@ -39,7 +39,7 @@
 ## 將作業系統載入記憶卡 
 以 MacOS 作為示範
   * 下載官方作業系統檔案
-    * 分為三種版本(附帶圖形化介面和建議軟體、單純圖形化介面、單純指令介面)，擇一下載 zip
+    * 分為三種版本(附帶圖形化介面和建議軟體、圖形化介面、單純指令介面)，擇一下載 zip
     * https://www.raspberrypi.org/downloads/raspbian/
   * 安裝 p7zip
     * ```$ brew install p7zip```
