@@ -45,8 +45,13 @@
     * ```$ 7z x [檔案路徑]```
   * 將 Micro SD 記憶卡插入讀卡機並插入電腦
   * 查詢 Micro SD 記憶卡的硬碟代號
-    * ``` diskutil list ```
+    * ```$ diskutil list ```
     * 將可看到電腦所有硬碟代號 (範例：/dev/disk2)
   * Micro SD 記憶卡進行格式化
-    * ```$ diskutil eraseDisk FAT32 RPI [硬碟代號]```
+    * ```$ diskutil eraseDisk FAT32 RPI [Micro SD 的硬碟代號]```
     * 範例：```$ diskutil eraseDisk FAT32 RPI /dev/disk2```
+  * 卸載
+    * ```$ diskutil unmountDisk [Micro SD 的硬碟代號]```
+    * 範例：```$ diskutil unmountDisk /dev/disk2```
+  * 將作業系統寫入 Micro SD 記憶卡
+    * ```$ sudo dd bs=1m if=[img 檔案路徑] of=[Micro SD 的硬碟代號]```
