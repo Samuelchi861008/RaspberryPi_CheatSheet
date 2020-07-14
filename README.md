@@ -18,7 +18,7 @@
   * 主機體
   * 64G SD記憶卡 
   * Type-C 變壓器 (建議購置原廠)
-  * 保護機體外殼 (含風扇和散熱片)
+  * 保護機體外殼 (建議含風扇和散熱片)
   * HDMI(母) 轉 Micro HDMI(公) 轉接頭
   * SD記憶卡讀卡器
   * 其他依據自己應用需求採購感應器與線材
@@ -32,3 +32,12 @@
 
 ## 腳位圖
 ![image](https://github.com/Samuelchi861008/RaspberryPi_CheatSheet/blob/master/%E8%85%B3%E4%BD%8D%E5%9C%96.png)
+
+
+## 將作業系統載入記憶卡 
+以 MacOS 作為範例
+  * 下載官方作業系統檔案
+    * 分為三種版本(附帶圖形化介面和建議軟體、單純圖形化介面、單純指令介面)，擇一下載 zip
+    * https://www.raspberrypi.org/downloads/raspbian/
+  * 安裝 p7zip
+    * ```$ brew install p7zip```
