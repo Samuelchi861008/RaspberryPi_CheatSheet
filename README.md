@@ -16,11 +16,11 @@
 
 ## 必備項目
   * 主機體
-  * 64G SD記憶卡 
+  * 64G Micro SD記憶卡 (注意是 Micro SD)
   * Type-C 變壓器 (建議購置原廠)
-  * 保護機體外殼 (建議含風扇和散熱片)
+  * 保護機體外殼 (建議含風扇和散熱片，因為 Pi 4B 較容易發燙)
   * HDMI(母) 轉 Micro HDMI(公) 轉接頭
-  * SD記憶卡讀卡器
+  * Micro SD記憶卡讀卡器
   * 其他依據自己應用需求採購感應器與線材
   
   採購參考網頁：https://www.eclife.com.tw/led/0703300039/1401100001/160309001
@@ -41,3 +41,12 @@
     * https://www.raspberrypi.org/downloads/raspbian/
   * 安裝 p7zip
     * ```$ brew install p7zip```
+  * 解壓縮 (解壓縮後將會產生相同檔名的img檔)
+    * ```$ 7z x [檔案路徑]```
+  * 將 Micro SD 記憶卡插入讀卡機並插入電腦
+  * 查詢 Micro SD 記憶卡的硬碟代號
+    * ``` diskutil list ```
+    * 將可看到電腦所有硬碟代號 (範例：/dev/disk2)
+  * Micro SD 記憶卡進行格式化
+    * ```$ diskutil eraseDisk FAT32 RPI [硬碟代號]```
+    * 範例：```$ diskutil eraseDisk FAT32 RPI /dev/disk2```
