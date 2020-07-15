@@ -71,6 +71,7 @@
 
 ## 安裝
   * 將散熱片確實貼上 Raspberry Pi
+  * 將安裝完作業系統的 Micro SD 記憶卡插入至 Raspberry Pi
   * 將盒子與風扇組裝完成，並將 Raspberry Pi 放至盒子中
   * 將鍵盤滑鼠接上 USB 連接阜
   * 將 HDMI 接上轉接頭後插入 Micro HDMI 連接阜，HDMI 需接上一個外接螢幕
