@@ -104,13 +104,18 @@
 
 ## 常用指令
 以下指令皆在 Raspberry Pi 執行
+  
   * 查看 CPU 溫度  
   ```$ vcgencmd measure_temp```
+  
   * 查看已開啟的 Port  
   ```$ sudo netstat -tulpn```
+  
   * 查看 SD 卡空閒狀況  
   ```$ df -h```
+  
   * 更新所有套件資料  
   ```$ sudo apt-get update```
+  
   * 升級所有套件資料  
   ```$ sudo apt-get upgrade```
