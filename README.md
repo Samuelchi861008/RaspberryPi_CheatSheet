@@ -103,7 +103,7 @@
     * 會要求再次重啟，點擊重啟即可
 
 ## 常用指令
-以下指令皆在 Raspberry Pi 執行
+以下指令應在 Raspberry Pi 執行
   
   * 查看 CPU 溫度  
   ```$ vcgencmd measure_temp```
@@ -118,4 +118,7 @@
   ```$ sudo apt-get update```
   
   * 升級所有套件資料  
-  ```$ sudo apt-get upgrade```
+  ```$ sudo apt-get upgrade```  
+  
+  * 清除所有更新時下載的暫存安裝檔案  
+  ```$ sudo apt-get clean```
