@@ -117,6 +117,13 @@
       * 登入時，請記得選擇家用，則為永遠免費
     * 自己電腦或手機請下載 VNC Viewer，登入後則會看到 Raspberry Pi 裝置，即可遠端連線使用  
     https://www.realvnc.com/en/connect/download/viewer/
+    * 以上方式可不需與 Raspberry Pi 同網段
+  * SSH 連線
+    * 需與 Raspberry Pi 相同網段
+    * 先在 Raspberry Pi 透過 ifconfig 查看 IP 位置 (範例: 192.168.x.x)
+    * 在自己電腦與手機打開『終端機』，輸入  
+    ```$ ssh pi@192.168.x.x```
+    * 輸入密碼後即可登入 (首次登入會需要先輸入 yes or no)
 
 
 ## 常用指令
