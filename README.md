@@ -148,6 +148,10 @@
     ```$ git config --global user.name "你的名字"```
     * 設定使用者信箱  
     ```$ git config --global user.email "你的信箱"```
+  
+  * 程式語言
+    * 內建已安裝完畢 Python2(版本2.7.16) 與 Python3(版本3.7.3)
+    * 內建已安裝完畢 gcc/g++ (版本8.3)
 
 
 ## 常用指令
