@@ -177,3 +177,6 @@
   
   * 清除所有更新時下載的暫存安裝檔案  
   ```$ sudo apt-get clean```
+
+  * 進行系統設定
+  ```$ sudo raspi-config```
