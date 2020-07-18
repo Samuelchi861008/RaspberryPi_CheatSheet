@@ -168,6 +168,10 @@
   
   * 查看 USB 連接的硬體  
   ```$ lsusb```
+
+  * 查看硬體詳細資訊  
+  ```$ sudo apt-get install lshw``` (首次需先安裝)  
+  ```$ lshw```
   
   * 更新所有套件資料  
   ```$ sudo apt-get update```
@@ -178,5 +182,5 @@
   * 清除所有更新時下載的暫存安裝檔案  
   ```$ sudo apt-get clean```
 
-  * 進行系統設定
+  * 進行系統設定  
   ```$ sudo raspi-config```
