@@ -120,12 +120,25 @@
     * 自己電腦或手機請下載 VNC Viewer，登入後則會看到 Raspberry Pi 裝置，即可遠端連線使用  
     https://www.realvnc.com/en/connect/download/viewer/
     * 以上方式可不需與 Raspberry Pi 同網段
-  * SSH 連線
+  * SSH 連線 (內網連線)
     * 需與 Raspberry Pi 相同網段
     * 先在 Raspberry Pi 透過 ifconfig 查看 IP 位置 (範例: 192.168.x.x)
     * 在自己電腦與手機打開『終端機』，輸入  
     ```$ ssh pi@192.168.x.x```
     * 輸入密碼後即可登入 (首次登入會需要先輸入 yes or no)
+  * SSH 連線 (外網連線)
+    * 可不需與 Raspberry Pi 相同網段，且 Raspberry Pi 可以連接 Wi-Fi
+    * 首先，先從中華電信申請固定IP  
+    http://service.hinet.net/2004/adslstaticip_query.php
+    * 將自己電腦先與 Raspberry Pi 連接網段 (也就是連結相同網路分享器)
+    * 透過自己電腦瀏覽器進入網路分享器，開啟設定頁面
+    * 將網路分享器以先前申請的固定IP進行設定固定
+    * 在網路分享器內找到 Raspberry Pi 內網 IP，並設定 DHCP 固定內網 IP
+    * 在網路分享器內設定連接阜轉發至 Raspberry Pi 內網 IP 的 22 port
+    * 建議更換外傳 port
+    * 以 SSH 外部連線後，輸入  
+    ```$ ssh pi@中華電信申請的固定IP -p 自定義的port```
+    * 若出現『WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!』錯誤訊息，輸入```$ ssh-keygen -R 中華電信申請的固定IP```，再重新連線。
 
 
 ## 軟體安裝或設定
