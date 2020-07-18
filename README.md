@@ -200,3 +200,6 @@
 
   * 進行系統設定  
   ```$ sudo raspi-config```
+
+  * 立即關機  
+  ```$ sudo shutdown -h now```
