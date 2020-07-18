@@ -130,15 +130,15 @@
     * 可不需與 Raspberry Pi 相同網段，且 Raspberry Pi 可以連接 Wi-Fi
     * 首先，先從中華電信申請固定IP  
     http://service.hinet.net/2004/adslstaticip_query.php
-    * 將自己電腦先與 Raspberry Pi 連接網段 (也就是連結相同網路分享器)
+    * 將自己電腦先與 Raspberry Pi 連接同網段 (也就是連結相同網路分享器之Wi-Fi)
     * 透過自己電腦瀏覽器進入網路分享器，開啟設定頁面
     * 將網路分享器以先前申請的固定IP進行設定，將網路分享器固定IP
     * 在網路分享器內找到 Raspberry Pi 內網 IP，並以 DHCP 設定固定內網 IP
     * 在網路分享器內設定『連接阜轉發』至 Raspberry Pi 內網 IP 的 22 port
     * 內部可固定 22 port，但外部 port 建議自定義更換
     * 以 SSH 外部連線後，輸入  
-    ```$ ssh pi@中華電信申請的固定IP -p 自定義的port```
-    * 若出現『WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!』錯誤訊息，輸入```$ ssh-keygen -R 中華電信申請的固定IP```，再重新連線。
+    ```$ ssh pi@[中華電信申請的固定IP] -p [自定義的port]```
+    * 若出現『WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!』錯誤訊息，輸入```$ ssh-keygen -R [中華電信申請的固定IP]```，再重新連線。
 
 
 ## 軟體安裝或設定
