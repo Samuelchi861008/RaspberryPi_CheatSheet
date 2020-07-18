@@ -185,6 +185,9 @@
   * 查看硬體詳細資訊  
   ```$ sudo apt-get install lshw``` (首次需先安裝)  
   ```$ lshw```
+
+  * 查看目前網路資訊  
+  ```$ iwconfig wlan0```
   
   * 更新所有套件資料  
   ```$ sudo apt-get update```
