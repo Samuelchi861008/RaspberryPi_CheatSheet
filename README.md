@@ -167,6 +167,12 @@
     * 內建已安裝完畢 Python2(版本2.7.16) 與 Python3(版本3.7.3)
     * 內建已安裝完畢 gcc/g++ (版本8.3)
 
+  * 安裝測網速套件
+    * 安裝 Speedtest  
+    ```$ sudo apt install speedtest-cli -y```
+    * 測網速  
+    ```$ speedtest```
+
 
 ## 常用指令
 以下指令應在 Raspberry Pi 執行
