@@ -211,6 +211,6 @@
   * 立即關機  
   ```$ sudo shutdown -h now```
 
-  * 無線網路監控流量數據
+  * 無線網路監控流量數據  
   ```$ sudo apt -y install iftop``` (首次需先安裝)  
   ```$ sudo iftop -i wlan0 -L 2000000000 -t -s 120 > log.txt```
