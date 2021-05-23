@@ -144,15 +144,7 @@
 
 ## 軟體安裝或設定
   * Visual Studio Code (簡稱：VS code)
-    * 本方式安裝並非官方提供方式，因為官方並未針對ARM架構之CPU裝置提供載點，因此國外人士針對開源程式碼進行修改後，修改成適合ARM架構的軟體，並提供下載，整體與官方版本功能皆相同。
-    * 首先，開啟『終端機』切換成管理員權限  
-    ```$ sudo -s```
-    * 安裝 VS code  
-    ```# . <( wget -O - https://code.headmelted.com/installers/apt.sh )```
-    * 切換回一般使用者模式  
-    ```# exit```
-    * 開啟 VS code (若不想使用指令開啟，可從應用程式選單選擇或是將項目釘選到桌面或工具列)  
-    ```$ code-oss```
+    ```$ sudo apt install code```
 
   * Git 初始設定
     * 預設已安裝好 Git，因此直接進行設定即可
