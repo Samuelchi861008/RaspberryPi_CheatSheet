@@ -143,7 +143,7 @@
 
 
 ## 軟體安裝或設定
-  * Visual Studio Code (簡稱：VS code)
+  * Visual Studio Code (簡稱：VS code)  
     ```$ sudo apt install code```
 
   * Git 初始設定
